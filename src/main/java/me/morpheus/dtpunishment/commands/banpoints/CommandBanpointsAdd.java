@@ -33,6 +33,9 @@ public class CommandBanpointsAdd implements CommandExecutor {
 		String name = user.getName();
 		int amount = args.<Integer>getOne("amount").get();
 
+		if(amount < 0) {
+			amount = 0;
+		}
 		dataStore.addBanpoints(uuid, amount);
 
 		int total = dataStore.getBanpoints(uuid);

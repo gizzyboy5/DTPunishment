@@ -1,0 +1,14 @@
+[
+    {
+        "modid": "dtpunishment",
+        "name": "DTPunishment",
+        "version": "1.0.0",
+        "description": "Dragon Tech Punishment: a unique chat safeguard plugin",
+        "dependencies": [
+            "spongeapi@7.1.0"
+        ],
+        "requiredMods": [
+            "spongeapi@7.1.0"
+        ]
+    }
+]

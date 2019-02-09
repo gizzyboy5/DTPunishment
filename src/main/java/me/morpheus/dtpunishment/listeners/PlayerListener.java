@@ -88,7 +88,7 @@ public class PlayerListener {
 	@Listener
 	public void onPlayerChat(MessageChannelEvent.Chat event, @Root Player player) {
 
-		String message = event.getRawMessage().toPlain();
+		String message = event.getRawMessage().toString();//.toPlain();
 		UUID uuid = player.getUniqueId();
 		int mutePointsIncurred = 0;
         if (!event.getChannel().isPresent() || !event.getChannel().get().getClass().getName().startsWith("org.spongepowered.api.text.channel.MessageChannel"))
